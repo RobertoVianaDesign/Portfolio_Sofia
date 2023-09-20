@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<title>Sofia Fernandes</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<!--<nav>
+		<div class="container remove-container header-yellow" id="fixed-menu2">
+			<div class="col-md-4 col-sm-3 col-xs-12 logo padding15 in-project"><a href="Index.html"><img class="logo-width" src="./img/logo_intro/logo_no_gif.png"></a></div>
+			<div class="menu-btn" type="button" onclick="growDiv()" data-toggle="collapse" data-target="#navbarResponsive material-icons">
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	        </div>
+			<div class="col-md-8 col-sm-7 col-xs-12 menu">
+				<ul class="navbar-nav menu-yellow">
+					<a href="#" onclick="displaySubMenu('submenu3')"><li class="padding15 menu-phone in">Let’s create!</li></a>
+					<a href="#" onclick="displaySubMenu('submenu2')"><li class="padding15 menu-phone in">What am I up to? </li></a>
+					<a href="#" onclick="displaySubMenu('submenu1')"><li class="padding15 menu-phone in">Nice to meet you!</li></a>
+				</ul>
+				<div class='grow'>
+				  <div class='measuringWrapper'>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu('submenu1')"><div class="padding15 menu-phone">Nice to meet you!</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu('submenu2')"><div class="padding15 menu-phone">What am I up to?</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu('submenu3')"><div class="padding15 menu-phone">Let’s create!</div></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</nav> -->
+
+
+
+	<!-- menus -->
+	<!--
+	<section id="submenu1" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 normal-text">Hey there my name is Sofia! I’m a graphic designer and motion designer. I graduated in Communication design and proceeded to study an old passion of mine, Animation and Motion graphics. I live in Lisbon. I love what I do and I love the pursuit of never-ending improvement in my all fields. Now that we met, let’s create!</p>
+			<div class="col-md-8 col-sm-9 col-xs-12">
+				<a style="color: inherit;" href="mailto:0sofia.fernandes0@gmail.com" target="_top"><button class="mail"><i class="far fa-envelope"></i>0sofia.fernandes0@gmail.com</button></a>
+				<ul class="social-purple">			
+					<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+					<li><a href="https://www.instagram.com/sofiaf.designs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-behance"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<button class="cv"><i class="fas fa-star"></i>cv<i class="fas fa-star"></i></button>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-3 col-xs-12 align-right girl-gif">
+				<img class ="intro-gif" src="./img/logo_intro/girl.gif">
+			</div>
+
+		</div>
+	</div>
+	</section>
+
+	<section id="submenu2" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 title-menu">Follow me on instagram  &nbsp; &nbsp; <i class="fa fa-star" style="font-size: 14px;"></i></p>
+			<div class="container">
+				<div id="instafeed" class="row"></div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section id="submenu3" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 title-menu">Let's work together</p>
+			<form method="post" name="myemailform" action="form-to-email.php">
+				<div class="col-md-6 col-sm-12 input">
+				    <label for="type of design">What do you need? *</label>
+				    <input type="text" name="type_of_design" id="type of design" placeholder="Ex: I need a logo/Motion graphic..">
+			    </div>
+			    <div class="col-md-6 col-sm-12 input">
+			   	 <label for="Deadline">What is you project deadline? *</label>
+			    	<input type="text" name="deadline" id="Deadline" placeholder="Ex: No deadline / I need in 14 days..">
+			    </div>
+			    <div class="col-md-6 col-sm-12 input">
+			    	<label for="message">Someting you want do add? (Optional)</label>
+			    	<input type="text" name="message" id="message" placeholder="Ex: Project needs to be private..">
+			    </div>
+			    <div class="col-md-6 col-sm-12 input">
+			    	<label for="e-mail">What is your e-mail? *</label>
+			   	 <input type="text" name="email" id="e-mail" name="e-mail" placeholder="Ex: John@gmail.com..">
+			    </div>
+			    <div class="col-md-6 col-sm-12 input contact-button">
+			    	<input type="submit" name='submit' value="submit">
+			    </div>
+			  </form>
+
+		</div>
+	</div>
+	</section>-->
+
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	  	<span class="close">&times;</span>
+	  	<img src="./img/CV_sofia_fernandes.png">
+	  </div>
+
+	</div>
+
+	<nav>
+		<div class="container remove-container header-yellow">
+			<div class="col-md-12 col-sm-3 col-xs-12 logo padding15"><a href="index.html"><img class="logo-width" src="./img/logo_intro/logo_final_new.gif"></a></div>
+			<div class="menu-btn" type="button" onclick="growDiv()" data-toggle="collapse" data-target="#navbarResponsive material-icons">
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	        </div>
+			<div class="col-md-12 col-sm-6 col-xs-12 menu">
+				<ul class="navbar-nav menu-yellow">
+					<a href="#" onclick="displaySubMenu(this, 'submenu1')"><li class="padding15 menu-phone">Nice to meet you!</li></a>	
+					<a href="#" onclick="displaySubMenu(this, 'submenu2')"><li class="padding15 menu-phone">What am I up to? </li></a>
+					<a href="#" onclick="displaySubMenu(this, 'submenu3')"><li class="padding15 menu-phone">Let’s create!</li></a>
+				</ul>
+				<div class='grow'>
+				  <div class='measuringWrapper'>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu1')"><div class="padding15 menu-phone">Nice to meet you!</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu2')"><div class="padding15 menu-phone">What am I up to?</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu3')"><div class="padding15 menu-phone">Let’s create!</div></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container remove-container header-yellow" id="fixed-menu">
+			<div class="col-md-4 col-sm-3 col-xs-12 logo padding15"><a href="index.html"><img class="logo-width" src="./img/logo_intro/logo_no_gif.png"></a></div>
+			<div class="menu-btn" type="button" onclick="growDiv()" data-toggle="collapse" data-target="#navbarResponsive material-icons">
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	            <div class="btn-line"></div>
+	        </div>
+			<div class="col-md-8 col-sm-7 col-xs-12 menu">
+				<ul class="navbar-nav menu-yellow">
+					<a href="#" onclick="displaySubMenu(this, 'submenu3')"><li class="padding15 menu-phone">Let’s create!</li></a>
+					<a href="#" onclick="displaySubMenu(this, 'submenu2')"><li class="padding15 menu-phone">What am I up to? </li></a>
+					<a href="#" onclick="displaySubMenu(this, 'submenu1')"><li class="padding15 menu-phone">Nice to meet you!</li></a>
+				</ul>
+				<div class='grow'>
+				  <div class='measuringWrapper'>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu1')"><div class="padding15 menu-phone">Nice to meet you!</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu2')"><div class="padding15 menu-phone">What am I up to?</div></a>
+				    <a href="#" class='dropdown-toggle' onclick="displaySubMenu(this, 'submenu3')"><div class="padding15 menu-phone">Let’s create!</div></a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- menus -->
+
+	<section id="submenu1" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 normal-text">Hey there my name is Sofia! I’m a graphic and motion designer. I graduated in Communication design and proceeded to study an old passion of mine, Animation and Motion graphics. I live in Lisbon. I love what I do and I love the pursuit of never-ending improvement in all my fields. Now that we met, let’s create!</p>
+			<div class="col-md-8 col-sm-9 col-xs-12">
+				<a style="color: inherit;" href="mailto:0sofia.fernandes0@gmail.com" target="_top"><button class="mail"><i class="far fa-envelope"></i>0sofia.fernandes0@gmail.com</button></a>
+				<ul class="social-purple">			
+					<li><a href="https://vimeo.com/user15392445" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
+					<li><a href="https://www.instagram.com/sofiaf.designs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.behance.net/AnaSofiaFernandes" target="_blank"><i class="fab fa-behance"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/sofiafernandes/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<button id="myBtn" class="cv"><i class="fas fa-star"></i>cv<i class="fas fa-star"></i></button>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-3 col-xs-12 align-right girl-gif">
+				<img class ="intro-gif" src="./img/logo_intro/girl.gif">
+			</div>
+
+		</div>
+	</div>
+	</section>
+
+	<section id="submenu2" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 title-menu">Follow me on instagram  &nbsp; &nbsp; <i class="fa fa-star" style="font-size: 14px;"></i></p>
+			<div class="container">
+				<div id="instafeed" class="row"></div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section id="submenu3" class="submenu">
+	<div class="container undermenu nice_to_meet">
+		<i class="fas fa-caret-down"></i>
+		<a href="#"><i class="fas fa-times" onclick="closeSubMenu()"></i></a>
+		<div class="undermenu_after">
+			<p class="col-md-12 title-menu">Let's work together</p>
+			<form class="gform pure-form pure-form-stacked" method="POST"
+			  action="https://script.google.com/macros/s/AKfycbxAXU_MbBXGSUhD_5xIg4eNvOBtEpe6uKHl0smeMy3CpK54H1c/exec">
+			    <!-- change the form action to your script url -->
+			<div class="col-md-6 col-sm-12 input">
+			    <label for="type of design">What do you need?</label>
+			    <input type="text" name="type_of_design" id="type of design" placeholder="Ex: I need a logo/Motion graphic..">
+		    </div>
+		    <div class="col-md-6 col-sm-12 input">
+		   	 <label for="Deadline">What is you project deadline?</label>
+		    	<input type="text" name="deadline" id="Deadline" placeholder="Ex: No deadline / I need in 14 days..">
+		    </div>
+		    <div class="col-md-6 col-sm-12 input">
+		    	<label for="message">Someting you want do add? (Optional)</label>
+		    	<input type="text" name="message" id="message" placeholder="Ex: Project need illustrations..">
+		    </div>
+		    <div class="col-md-6 col-sm-12 input">
+		    	<label for="e-mail">What is your e-mail?</label>
+		   	 <input type="text" name="email" id="e-mail" name="e-mail" placeholder="Ex: John@gmail.com..">
+		    </div>
+		    <div class="col-md-6 col-sm-12 input contact-button">
+		    	<input type="submit"  value="submit">
+		    </div>
+			<div style="display:none" class="col-md-6 col-sm-12 thankyou_message">
+			 <!-- You can customize the thankyou message by editing the code below -->
+			 <p>Thanks for contacting us! I will get back to you soon!</p>
+			</div>
+
+			  </form>
+
+		</div>
+	</div>
+	</section>
+
+
+	<!-- Main banner -->
+
+
+	<div class="project-header with-image">
+		<div class="col-sm-12 festival">
+			<a href="index.html"><div class="icon-backwords">
+				<img src="./img/festival/seta_site.png">
+			</div></a>
+			<div class="festival-image">
+				<img class="col-md-4 col-sm-6" src="./img/festival/FR_SITE-03.png">
+			</div>
+			<div class="col-md-8 col-sm-6 main-text">
+					<span>Festival Restart is a three day festival made by students. <br>This festival is full of music, interesting conversations and it showcases some student work. <br>The branding was inspired by those that go to the festival and by the contagious, relaxed and friendly mood of days spent there. <br>This is branding of the festival which includes tickets, posters and merch.</span>
+			</div>
+		</div>
+		<div class="col-md-12 image-down">
+			<img src="./img/festival/FR_SITE-02.png">
+		</div>
+		
+	</div>
+
+	<div class="col-md-12 just-image">
+		<img src="./img/festival/FR_SITE_2.jpg">
+	</div>
+
+	<div class="col-md-12 poster-three">
+		<img src="./img/festival/FR_SITE_3.jpg">
+		<img src="./img/festival/FR_SITE_4.jpg">
+		<img src="./img/festival/FR_SITE_5.jpg">
+	</div>
+
+	<div class="col-md-12 just-image">
+		<img src="./img/festival/FR_SITE_6.jpg">
+	</div>
+
+	<div class="col-md-12 just-image padding-bottom200">
+		<img src="./img/festival/festival.gif">
+	</div>
+
+
+	<!-- 
+
+	<div id="myModal" class="modal">
+
+	  
+	  <span class="close">&times;</span>
+	  <div class="modal-content">
+	  	  	<div class="full-image">
+		    <p>Some text in the Modal..</p>
+	    </div>
+	  </div>
+
+	</div> 
+	
+	-->
+
+
+	<!-- Footer -->
+
+	<footer>
+		<div class="footer-gif">
+			<img class ="end-gif" src="./img/logo_intro/girl_end_2.gif">
+		</div>
+		<div class="container-fluid">
+			<div class="text-center footer-text">
+				<a href="#" onclick="displaySubMenu('submenu3')" ><button class="yellow-button">Let’s make something amazing!</button></a>
+				<div class="col-md-12 padding15">	
+					<ul class="social">			
+						<li><a href="https://vimeo.com/user15392445" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
+						<li><a href="https://www.instagram.com/sofiaf.designs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://www.behance.net/AnaSofiaFernandes" target="_blank"><i class="fab fa-behance"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/sofiafernandes/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a target="_blank" href="https://www.zaask.pt/user/0sofiafernandes"><img style="width: 40px;" src="https://www.zaask.pt/widget?user=425197&widget=pro-since" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+
+
+
+ 
+	<!--scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/instafeed.min.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+	
+
+    <script type="text/javascript">
+		(function($) {          
+		    $(document).ready(function(){                    
+		        $(window).scroll(function(){                          
+		            if ($(this).scrollTop() > 230) {
+		                $('#fixed-menu').slideDown("fast");
+		            } else {
+		                $('#fixed-menu').fadeOut(100);
+		            }
+		        });
+		    });
+		})(jQuery);
+	</script>
+
+
+
+
+</body>
+
+</html>
